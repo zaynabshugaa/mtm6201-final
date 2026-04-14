@@ -23,7 +23,7 @@ h1, h2 {
     color: var(--green-3);
 }
 
-/* --- GLOBAL IMAGE RESET because everything else isnt working --- */
+/* --- GLOBAL IMAGE RESET because everything else wasn't working --- */
 img, picture {
     max-width: 100%;
     height: auto;
