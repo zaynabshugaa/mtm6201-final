@@ -208,3 +208,39 @@ h1, h2 {
 }
 
 /* testimonials section ENDS*/
+
+
+
+
+
+
+/* about us section */
+.about-teaser .lead {
+    font-family: var(--font-body);
+    color: var(--green-4);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.about-img-wrapper img {
+    border-radius: 40px !important; 
+    transition: transform 0.4s ease;
+}
+
+.about-img-wrapper img:hover {
+    transform: rotate(-2deg) scale(1.02);
+}
+
+/* keeps the button in palce on mobile */
+@media (max-width: 767px) {
+    .about-text-content {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+/* about us section ENDS */
+
+
+
+
+
