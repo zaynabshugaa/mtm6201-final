@@ -535,3 +535,58 @@ h1, h2 {
     }
 }
 /* contact host section ENDS*/
+
+
+
+
+
+
+/* contact form section */
+.form-container {
+    background-color: var(--green-1); 
+    color: var(--green-4);
+}
+
+.form-label {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--yellow);
+    box-shadow: 0 0 0 0.25rem rgba(248, 183, 33, 0.25);
+}
+
+/* radio buttons colours */
+.form-check-input:checked {
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+/* box stlying */
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23F8B721' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+/* buttons for the form */
+.btn-cancel {
+    background-color: var(--white);
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-next {
+    background-color: var(--yellow);
+    color: var(--white);
+    border: 2px solid var(--yellow);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-next:hover {
+    background-color: #e0a21d; /* darker yellow for hover */
+    color: var(--white);
+}
+/* contact form section ENDS */

@@ -132,6 +132,80 @@
 <!-- contact host section ENDS -->
 
 
+<!-- contact form section -->
+<section class="catering-form-section container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="form-container p-5 rounded-5 shadow-sm">
+                <form id="cateringForm" class="needs-validation" novalidate>
+                    
+                    <div class="mb-4">
+                        <label for="userName" class="form-label fw-bold">Your Name</label>
+                        <input type="text" class="form-control rounded-3 py-2" id="userName" placeholder="Enter name" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="userEmail" class="form-label fw-bold">Your Email Address</label>
+                        <input type="email" class="form-control rounded-3 py-2" id="userEmail" placeholder="Enter email" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="eventType" class="form-label fw-bold">Event Type</label>
+                        <input type="text" class="form-control rounded-3 py-2" id="eventType" placeholder="Enter event type" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="eventDate" class="form-label fw-bold">Event Date</label>
+                        <input type="text" class="form-control rounded-3 py-2" id="eventDate" placeholder="Enter event date" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="dietary" id="dietVeg" checked>
+                            <label class="form-check-label" for="dietVeg">Vegetarian</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="dietary" id="dietVegan">
+                            <label class="form-check-label" for="dietVegan">Vegan</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="dietary" id="dietGF">
+                            <label class="form-check-label" for="dietGF">Gluten Free</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="dietary" id="dietAll">
+                            <label class="form-check-label" for="dietAll">All of the above</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="guestCount" class="form-label fw-bold">Select Food Type</label>
+                        <select class="form-select rounded-3 py-2" id="guestCount" required>
+                            <option selected value="1">30 - 100 people</option>
+                            <option value="2">100 - 200 people</option>
+                            <option value="3">200 people +</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="eventNotes" class="form-label fw-bold">Enter Notes</label>
+                        <textarea class="form-control rounded-3" id="eventNotes" rows="3" placeholder="Enter notes"></textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button type="reset" class="btn btn-cancel text-uppercase px-5 py-2">Cancel</button>
+                        <button type="submit" class="btn btn-next text-uppercase px-5 py-2">Next</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact form section ENDS -->
+
+
+
 <!-- footer section -->
 <footer class="footer-section py-5 mt-5">
     <div class="container text-center text-white">
