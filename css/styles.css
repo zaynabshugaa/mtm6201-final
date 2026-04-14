@@ -64,39 +64,65 @@ h1, h2 {
 }
 
 /* card styling for CTA wrap */
+/* Card styling with the soft gradient from your screenshot */
 .fav-card {
-    background: linear-gradient(135deg, var(--green-1) 0%, #ffffff 100%);
+    background: linear-gradient(90deg, var(--green-1) 0%, #ffffff 80%);
+    border-radius: 40px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.fav-content h2 {
+    color: var(--green-4);
+}
+
+.fav-content h3 {
+    color: var(--green-3);
+}
+
+/* The 3D Green 'ORDER' Button */
+.btn-custom-outline {
+    border: 2px solid var(--green-3);
+    color: var(--green-3);
+    background-color: transparent;
     border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    font-weight: 700;
+    /* This creates the thick bottom shadow look */
+    box-shadow: 0 5px 0 var(--green-4);
+    transition: all 0.1s ease;
 }
 
-
-.fav-image-container img {
-    max-width: 350px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Custom Button */
-.btn-menu-xl {
-    border: 3px solid var(--yellow);
-    color: var(--yellow);
-    font-weight: bold;
-    padding: 15px 40px;
-    border-radius: 50px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.btn-menu-xl:hover {
-    background-color: var(--yellow);
+.btn-custom-outline:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 var(--green-4);
+    background-color: var(--green-3);
     color: white;
 }
 
-/* Accessibility: Readable text contrast */
-.text-muted {
-    color: var(--green-2) !important;
+/* The Large Yellow 'SEE FULL MENU' Button */
+.btn-menu-xl {
+    border: 3px solid var(--yellow);
+    color: var(--yellow);
+    font-weight: 800;
+    padding: 12px 50px;
+    border-radius: 40px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: inline-block;
+    /* This creates that double-border/offset shadow effect */
+    box-shadow: 0 8px 0 #F8B721; 
+    transition: all 0.2s ease;
+}
+
+.btn-menu-xl:hover {
+    transform: translateY(3px);
+    box-shadow: 0 4px 0 #F8B721;
+    color: var(--yellow);
+}
+
+/* Image sizing to match screenshot */
+.fav-image-container img {
+    max-width: 400px;
+    border-radius: 25px !important;
 }
 
 /* Responsive adjustments */
