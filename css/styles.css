@@ -23,6 +23,11 @@ h1, h2 {
     color: var(--green-3);
 }
 
+
+
+
+/* hero section - including the CTA hummus section*/
+
 /* hero section style */
 .hero-shape {
     background-color: var(--green-1);
@@ -31,7 +36,7 @@ h1, h2 {
     text-align: right;
 }
 
-/* Card Styling */
+/* card styling for CTA wrap */
 .fav-card {
     background: linear-gradient(135deg, var(--green-1) 0%, #ffffff 100%);
     border-radius: 30px;
@@ -73,3 +78,133 @@ h1, h2 {
         margin-top: 2rem;
     }
 }
+/* hero section ENDS - including the CTA hummus section*/
+
+
+
+
+
+/* Options section */
+
+/* section spacing */
+.options-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.options-section h2 {
+    color: var(--green-3);
+    font-size: 2.5rem; 
+}
+
+.options-section p {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 450px; /* keeps text from stretching too wide on desktop */
+}
+
+/* 3D Outline Button Effect */
+.btn-custom-outline {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--green-3);
+    border: 2px solid var(--green-3);
+    border-radius: 50px;
+    padding: 10px 35px;
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    /* This creates the dark green "shadow" seen in your screenshot */
+    box-shadow: 0 6px 0 var(--green-4); 
+    position: relative;
+}
+
+.btn-custom-outline:hover {
+    color: var(--white);
+    background-color: var(--green-3);
+    transform: translateY(2px);
+    box-shadow: 0 4px 0 var(--green-4);
+}
+
+.btn-custom-outline:active {
+    transform: translateY(6px);
+    box-shadow: none;
+}
+
+/* Responsive fix for buttons on mobile */
+@media (max-width: 576px) {
+    .btn-custom-outline {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Options section ENDS */
+
+
+
+
+
+
+/* testimonials section */
+
+/* Testimonials Styling */
+.testimonial-container {
+    background: linear-gradient(to bottom, var(--green-1), #f1f8e9);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.testimonial-title {
+    font-family: var(--font-heading);
+    color: var(--green-3);
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+.testimonial-img-wrapper {
+    position: relative;
+    display: inline-block;
+    max-width: 320px;
+    width: 100%;
+}
+
+.testimonial-img {
+    border-radius: 60px; /* for the rounded corners */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-img:hover {
+    transform: scale(1.03);
+}
+
+.testimonial-text p {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--green-4);
+    line-height: 1.6;
+}
+
+.blockquote-footer {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--green-2) !important;
+}
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+    .testimonial-container {
+        padding: 2rem !important;
+    }
+    
+    .testimonial-title {
+        font-size: 2rem;
+    }
+}
+
+/* testimonials section ENDS*/
