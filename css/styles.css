@@ -392,7 +392,6 @@ picture img {
 
 
 /* menu sub nav section */
-/* Custom underline for the active link */
 .menu-sub-nav .menu-cat-link.active {
     color: var(--green-3);
     text-underline-offset: 8px;
