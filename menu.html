@@ -91,27 +91,31 @@
 <nav class="menu-sub-nav container my-4">
     <div class="d-flex justify-content-between align-items-center py-3 border-top" style="border-color: var(--green-3) !important;">
         
-        <div class="filter-icon">
-            <img src="images/filter.png" alt="Filter menu" style="width: 30px; height: auto;">
+        <div class="filter-icon d-block d-md-none">
+            <button class="btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuCategories" aria-expanded="false" aria-label="Toggle categories">
+                <i class="bi bi-sliders2-vertical" style="font-size: 1.5rem; color: var(--green-3);"></i>
+            </button>
         </div>
 
-        <ul class="nav justify-content-center flex-grow-1">
-            <li class="nav-item">
-                <a class="nav-link menu-cat-link active" href="#">APPETIZERS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-cat-link" href="#">MAINS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-cat-link" href="#">DESSERTS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-cat-link" href="#">PLATTERS</a>
-            </li>
-        </ul>
+        <div class="collapse d-md-block flex-grow-1" id="menuCategories">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link menu-cat-link active" href="#">APPETIZERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-cat-link" href="#">MAINS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-cat-link" href="#">DESSERTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-cat-link" href="#">PLATTERS</a>
+                </li>
+            </ul>
+        </div>
 
         <div class="basket-icon">
-            <img src="images/basket.png" alt="Shopping Basket" style="width: 35px; height: auto;">
+            <i class="bi bi-basket3-fill" style="font-size: 1.8rem; color: var(--green-3);"></i>
         </div>
         
     </div>
