@@ -495,7 +495,43 @@ h1, h2 {
         margin-top: 3rem;
     }
 }
-/* contact page main top section */
+/* contact page main top section ENDS */
 
 
 
+
+
+
+
+
+
+/* contact host section */
+.host-section h2 {
+    font-family: var(--font-heading);
+    letter-spacing: -1px;
+}
+
+.host-section p {
+    font-family: var(--font-body);
+    max-width: 800px;
+    color: var(--green-4);
+}
+
+/* Custom Green Divider */
+.custom-hr {
+    height: 2px;
+    background-color: var(--green-3);
+    width: 100%;
+    opacity: 0.6;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+    .host-section h2 {
+        font-size: 2.5rem;
+    }
+    .host-section p {
+        font-size: 1.1rem !important;
+    }
+}
+/* contact host section ENDS*/
