@@ -54,8 +54,6 @@ h1, h2 {
 }
 
 /* hero section - including the CTA hummus section*/
-
-/* hero section style */
 .hero-shape {
     background-color: var(--green-1);
     border-radius: 0 300px 0 300px; /* makes the curved leaf style */
@@ -63,8 +61,7 @@ h1, h2 {
     text-align: right;
 }
 
-/* card styling for CTA wrap */
-/* Card styling with the soft gradient from your screenshot */
+/* card styling for CTA- hummus thing */
 .fav-card {
     background: linear-gradient(90deg, var(--green-1) 0%, #ffffff 80%);
     border-radius: 40px;
@@ -79,14 +76,13 @@ h1, h2 {
     color: var(--green-3);
 }
 
-/* The 3D Green 'ORDER' Button */
+/* the green order button */
 .btn-custom-outline {
     border: 2px solid var(--green-3);
     color: var(--green-3);
     background-color: transparent;
     border-radius: 30px;
     font-weight: 700;
-    /* This creates the thick bottom shadow look */
     box-shadow: 0 5px 0 var(--green-4);
     transition: all 0.1s ease;
 }
@@ -98,7 +94,7 @@ h1, h2 {
     color: white;
 }
 
-/* The Large Yellow 'SEE FULL MENU' Button */
+/* the yellow menu button */
 .btn-menu-xl {
     border: 3px solid var(--yellow);
     color: var(--yellow);
@@ -108,7 +104,6 @@ h1, h2 {
     font-size: 1.8rem;
     text-decoration: none;
     display: inline-block;
-    /* This creates that double-border/offset shadow effect */
     box-shadow: 0 8px 0 #F8B721; 
     transition: all 0.2s ease;
 }
@@ -119,13 +114,12 @@ h1, h2 {
     color: var(--yellow);
 }
 
-/* Image sizing to match screenshot */
 .fav-image-container img {
     max-width: 400px;
     border-radius: 25px !important;
 }
 
-/* Responsive adjustments */
+/* responsive adjustments */
 @media (max-width: 768px) {
     .hero-shape {
         border-radius: 50px;
@@ -138,7 +132,7 @@ h1, h2 {
 
 
 
-/* Options section */
+/* options section */
 
 /* section spacing */
 .options-section {
@@ -155,10 +149,9 @@ h1, h2 {
     font-family: var(--font-body);
     font-size: 1.1rem;
     line-height: 1.6;
-    max-width: 450px; /* keeps text from stretching too wide on desktop */
+    max-width: 450px; /* keeps text from stretching too wide for desktop */
 }
 
-/* 3D Outline Button Effect */
 .btn-custom-outline {
     font-family: var(--font-body);
     font-weight: 500;
@@ -172,7 +165,6 @@ h1, h2 {
     display: inline-block;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     
-    /* This creates the dark green "shadow" seen in your screenshot */
     box-shadow: 0 6px 0 var(--green-4); 
     position: relative;
 }
@@ -189,7 +181,6 @@ h1, h2 {
     box-shadow: none;
 }
 
-/* Responsive fix for buttons on mobile */
 @media (max-width: 576px) {
     .btn-custom-outline {
         width: 100%;
@@ -205,8 +196,6 @@ h1, h2 {
 
 
 /* testimonials section */
-
-/* Testimonials Styling */
 .testimonial-container {
     background: linear-gradient(to bottom, var(--green-1), #f1f8e9);
     box-shadow: 0 10px 40px rgba(0,0,0,0.05);
@@ -250,7 +239,6 @@ h1, h2 {
     color: var(--green-2) !important;
 }
 
-/* responsive tweaks */
 @media (max-width: 768px) {
     .testimonial-container {
         padding: 2rem !important;
@@ -355,12 +343,12 @@ h1, h2 {
 
 /* menu header section */
 
-/* Animation for the button */
+/* animation for button */
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 6px 0 var(--green-4); /* Keep your 3D shadow */
+    box-shadow: 0 6px 0 var(--green-4);
     transition-duration: 0.3s;
     transition-property: transform;
 }
@@ -369,7 +357,6 @@ h1, h2 {
     transform: scale(1.05);
 }
 
-/* responsive */
 @media (max-width: 768px) {
     .menu-header h1 {
         font-size: 3rem;
@@ -413,14 +400,13 @@ h1, h2 {
     text-underline-offset: 8px;
 }
 
-/* icons container styling */
+/* icons styling */
 .filter-icon, .basket-icon {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-/* responsive edits */
 @media (max-width: 768px) {
     .menu-sub-nav .nav {
         display: none;
@@ -481,7 +467,6 @@ h1, h2 {
 
 /* contact page main top section */
 .connect-card {
-    /* Matches the soft green gradient in your screenshot */
     background: linear-gradient(to right, var(--green-1), rgba(255, 255, 255, 0));
     color: var(--green-4);
 }
@@ -491,7 +476,6 @@ h1, h2 {
     font-size: 1.1rem;
 }
 
-/* Social Pill Links (The dark green icons) */
 .social-pill-link {
     display: inline-flex;
     align-items: center;
@@ -515,7 +499,6 @@ h1, h2 {
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* Responsive adjust for the map on mobile */
 @media (max-width: 991px) {
     .map-container {
         margin-top: 3rem;
@@ -543,7 +526,7 @@ h1, h2 {
     color: var(--green-4);
 }
 
-/* Custom Green Divider */
+/* green line */
 .custom-hr {
     height: 2px;
     background-color: var(--green-3);
@@ -551,7 +534,6 @@ h1, h2 {
     opacity: 0.6;
 }
 
-/* Responsive adjustment for mobile */
 @media (max-width: 768px) {
     .host-section h2 {
         font-size: 2.5rem;
@@ -583,7 +565,7 @@ h1, h2 {
     box-shadow: 0 0 0 0.25rem rgba(248, 183, 33, 0.25);
 }
 
-/* radio buttons colours */
+/* radio buttons colour */
 .form-check-input:checked {
     background-color: var(--yellow);
     border-color: var(--yellow);
