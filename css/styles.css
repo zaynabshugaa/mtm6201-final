@@ -1,62 +1,75 @@
-/* custom colours */
 :root {
     --green-1: #99B970;
     --green-2: #729A47;
     --green-3: #3F6421;
     --green-4: #344422;
     --yellow: #F8B721;
-    --bg-white: #FFFFFF;
+    --white: #FFFFFF;
+    
+    /* Font stacks */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
-    background-color: var(--bg-white);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-body);
+    background-color: var(--white);
     color: var(--green-4);
 }
 
-.text-primary-green { color: var(--green-3); }
-.text-secondary-green { color: var(--green-1); }
-.bg-dark-green { background-color: var(--green-4); }
+h1, h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--green-3);
+}
 
-/* Rounded corners per mockup */
-.rounded-custom {
-    border-top-right-radius: 150px;
-    border-bottom-left-radius: 50px;
+/* hero section style */
+.hero-shape {
+    background-color: var(--green-1);
+    border-radius: 0 300px 0 300px; /* makes the curved leaf style */
+    overflow: hidden;
+    text-align: right;
 }
 
 /* Card Styling */
-.card-favourite {
-    background: linear-gradient(135deg, #e9f0e1 0%, #ffffff 100%);
-    border: 1px solid var(--green-1);
+.fav-card {
+    background: linear-gradient(135deg, var(--green-1) 0%, #ffffff 100%);
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* Button Customization */
-.btn-yellow {
+.fav-image-container img {
+    max-width: 350px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Custom Button */
+.btn-menu-xl {
+    border: 3px solid var(--yellow);
+    color: var(--yellow);
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-menu-xl:hover {
     background-color: var(--yellow);
     color: white;
-    border: none;
-    transition: transform 0.2s;
 }
 
-.btn-yellow:hover {
-    background-color: #e0a51d;
-    transform: scale(1.05);
-}
-
-/* Testimonial Section */
-.testimonial-section {
-    background-color: #f4f8f0;
-}
-
-.testimonial-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+/* Accessibility: Readable text contrast */
+.text-muted {
+    color: var(--green-2) !important;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .display-3 {
-        font-size: 2.5rem;
+    .hero-shape {
+        border-radius: 50px;
+        margin-top: 2rem;
     }
 }
