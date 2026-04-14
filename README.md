@@ -1,6 +1,9 @@
 # mtm6201-final
 
-# Plant Palette - Final Project
+# Plant Palette - Final Project 
+
+# Figma Link: https://www.figma.com/design/dVbtzc6RiC21UwwkAUlem7/zaynab-shugaa-Plant-Palette?node-id=0-1&t=GjqCGfsnjQmrh0Z7-1
+
 
 ## Project Overview
 Plant Palette is a high-fidelity, responsive website designed for a fictional modern vegan restaurant. The project focuses on a "nature-made" aesthetic, using a green and yellow palette to highlight fresh, plant-based dining. This site was developed as the final requirement for MTM6201.
