@@ -23,6 +23,17 @@ h1, h2 {
     color: var(--green-3);
 }
 
+/* --- GLOBAL IMAGE RESET because everything else isnt working --- */
+img, picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
 
 /* fixing the navbar with overrides */
 .navbar {
